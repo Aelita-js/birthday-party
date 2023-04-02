@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/homepage/homepage.css">
+    <link rel="stylesheet" href="./styles/adaptive/adaptive.css">
+    <title>Aelita's Birthday Party</title>
+</head>
+<body>
+    <!-- ! Модальное окно для имени -->
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form action="">
+                    <input id="name_input" type="text" placeholder="Личный код?">
+                    <button id="name_button">Войти</button>
+                </form>
+                <!-- <div class="pop_up_close" id="close_pop_up">&#10006</div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 id="for_name"></h2>
+        <h3>Приглашаю тебя на своё 18 летие!</h3>
+    </div>
+
+    <div class="intro">
+        <img src="./access/IMG_7285.WEBP" alt="Aelita">
+        <div class="intro_title">
+            <h4>18</h4>
+            <h5>Аэлита</h5>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <h2>GRRRLS POWER PARTY</h2>
+        <div>
+            <p>Незабываемый праздник на самой высокой точке нашего города! И ждет невероятный вид, который точно оставит в нас множество впечатлений и вдохновения.</p>
+            <br>
+            <p>Сможем насладиться фотосессиями, познакомиться с новыми людьми, и, конечно же, создать лучшие воспоминания.</p>
+            <br>
+            <p>И только от каждого из нас зависит атмосфера, наполненная весельем, смехом и позитивными эмоциями и подарить себе настоящее настроение праздника!</p>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <h2>ВАЖНЫЕ СВЕДЕНИЯ:</h2>
+        <div>
+            <p>Дата и время:  <b>12-апреля, 2023 года, среда, 19:30</b></p>
+            <p>Локация:  <b>Ресторан IWA  (отель Sheraton)</b></p>
+            <p>Адрес:  <b>ул. Киевская, 148 (пер. пр. Ч. Айтматова)</b></p>
+        </div>
+    </div>
+
+
+    <div class="dress_code">
+        <h2>DRESS CODE: <br> Cocktail with sequins (Black & White)</h2>
+        
+    </div>
+
+
+    <div class="bye">
+        <h3>БУДУ СЧАСТЛИВА РАЗДЕЛИТЬ ЭТОТ ДЕНЬ С ТОБОЙ!</h3>
+        <h4>Целую</h4>
+    </div>
+
+
+    <script>
+        const nameButton = document.getElementById('name_button');
+        const popUp = document.getElementById('pop_up');
+
+        function showPopup() {
+            document.getElementById('pop_up').style.display = 'block';
+        }
+        window.onload = showPopup();
+
+
+        nameButton.onclick = function() {
+            let val = document.getElementById('name_input').value;
+            console.log(val);
+
+            if (val === 'itcamp.kg') {
+                document.getElementById('for_name').innerHTML="Дорогая Сезим!";
+                document.getElementById('pop_up').style.display = 'none';
+            } else if (val === 'aigessssha') {
+                document.getElementById('for_name').innerHTML="Дорогая Айгерим!";
+                document.getElementById('pop_up').style.display = 'none';
+            } else if (val === '_merrayy') {
+                document.getElementById('for_name').innerHTML="Дорогая Гулиза!";
+                document.getElementById('pop_up').style.display = 'none';
+            } else if (val === 'nurkyzaz') {
+                document.getElementById('for_name').innerHTML="Дорогая Нуркыз!";
+                document.getElementById('pop_up').style.display = 'none';
+            } else if (val === 'elizaass___') {
+                document.getElementById('for_name').innerHTML="Дорогая Элиза!";
+                document.getElementById('pop_up').style.display = 'none';
+            } else if (val === 'azamat92') {
+                document.getElementById('for_name').innerHTML="Дорогой Азамат!";
+                document.getElementById('pop_up').style.display = 'none';
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
